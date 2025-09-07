@@ -1,0 +1,25 @@
+#GOOGLE
+TRANSLATION
+ADD /EN TO THE LINK THEN PRINT
+#XPATH
+xpath title
+//*[@id="title"]
+xpath assignee
+/html/body/search-app/search-result/search-ui/div/div/div/div/div/result-container/patent-result/div/div/div/div[1]/div[2]/section/dl[1]/dd[2]
+xpath inventor
+//*[@id="link"]
+xpath publication date
+/html/body/search-app/search-result/search-ui/div/div/div/div/div/result-container/patent-result/div/div/div/div[1]/div[2]/section/application-timeline/div/div[7]/div[1]
+xpath abstract
+/html/body/search-app/search-result/search-ui/div/div/div/div/div/result-container/patent-result/div/div/div/div[1]/div[1]/section[1]/patent-text/div/section/abstract/div
+xpath first image
+/html/body/search-app/search-result/search-ui/div/div/div/div/div/result-container/patent-result/div/div[1]/div/div[1]/div[1]/section[2]/image-carousel/div/img[1]
+xpath-download
+/html/body/search-app/search-result/search-ui/div/div/div/div/div/result-container/patent-result/div/div/div/div[1]/div[2]/section/header/div/a
+   
+
+ESPACENET
+Link to translation (description)
+https://translationportal.epo.org/emtp/translate/?ACTION=description-retrieval&COUNTRY=CH&ENGINE=google&FORMAT=docdb&KIND=A5&LOCALE=en_EP&NUMBER=668748&SRCLANG=de&TRGLANG=en
+Link to translation (claims).
+https://translationportal.epo.org/emtp/translate/?ACTION=claims-retrieval&COUNTRY=CH&ENGINE=google&FORMAT=docdb&KIND=A5&LOCALE=en_EP&NUMBER=668748&SRCLANG=de&TRGLANG=en
