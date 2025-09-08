@@ -1,0 +1,52 @@
+Setup
+uv init ...
+uv add ...
+uv run ...
+uv sync  #syncs to the pyproject.toml dependencies
+uv remove .. #removes a python installation
+
+#go to directory
+git config --global user.email "wcollard@yahoo.com"
+git config --global user.name "William Collard"
+git init
+#create .gitignore contents below to remove folder .venv
+	.venv/
+git add -A   #this adds all of the files except that in .gitignore
+git commit -m "title of commit"
+
+
+#setup github
+git branch -M main
+git remote add origin https://github.com/Wcollard/search.git
+
+#now push the documents to the repository
+git push origin main
+
+#create executable file
+#input into top of script
+# uv: uvicorn==0.22.0
+import uvicorn
+
+#bundle script into executable
+uv pack script.py --output script.exe
+
+#Make sure you can run virtual environments
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+Or
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+.venv/Scripts/activate
+
+#pyinstaller 
+pip install pyinstaller
+#simplest command
+pyinstaller your_script.py
+#bundle into single executable
+pyinstaller --onefile your_script.py
+#hiding console window
+pyinstaller --onefile --noconsole your_script.py
+#adding data files
+pyinstaller --onefile --add-data "data_file.txt;." your_script.py
+#handling Hidden Imports
+pyinstaller --onefile --hidden-import=module_name your_script.py
+
+

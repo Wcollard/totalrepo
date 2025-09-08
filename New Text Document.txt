@@ -1,0 +1,3 @@
+uv init  Initializes the repository creates a .toml file
+uv add (adds to the .toml file a package
+uv run .. runs the application.
